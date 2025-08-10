@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@stackpress/ingest": "^0.6.1",
     "cors": "^2.8.5",
     "dotenv": "^17.2.1",
     "express": "^5.1.0",
@@ -19,7 +20,8 @@
     "dev": "nodemon --watch backend/ --ext ts,js,json --exec \"tsx backend/server.ts\"",
     "start": "node --import tsx backend/server.ts",
     "build": "tsc && npm run build --prefix frontend",
-    "build:backend": "tsc"
+    "build:backend": "tsc",
+    "seed": "tsx backend/seedDatabase.ts"
   },
   "type": "module",
   "name": "thiscarte"
